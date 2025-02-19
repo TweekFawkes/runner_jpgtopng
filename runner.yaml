@@ -11,7 +11,7 @@ build:
 
 webform:
   - name: jpg_file
-    prompt: JPG File to Convert to PNG
+    prompt: Convert JPG to PNG
     type: file
 
 launch:
