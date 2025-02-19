@@ -1,0 +1,18 @@
+runner:
+  name: Convert JPG to PNG
+  description: Convert JPG to PNG.
+  version: 0.0.1
+
+build:
+  commands: |
+    echo "START: Building the runner"
+    python3 -m pip install -U -r requirements.txt
+    echo "END: Building the runner"
+
+webform:
+  - name: jpg_file
+    prompt: JPG File to Convert to PNG
+    type: file
+
+launch:
+  command: app.py --jpg_file ${jpg_file}
